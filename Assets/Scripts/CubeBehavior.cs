@@ -32,22 +32,22 @@ public class CubeBehavior : MonoBehaviour
             rb.velocity = jump * speed;
         }
 
-        if(Input.GetKeyDown(KeyCode.UpArrow))
+        if(Input.GetKeyDown("w"))
         {
             rb.velocity = goForward * speed;
         }
 
-        if(Input.GetKeyDown(KeyCode.DownArrow))
+        if(Input.GetKeyDown("s"))
         {
             rb.velocity = goBack * speed;
         }
 
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        if(Input.GetKeyDown("a"))
         {
             rb.velocity = goLeft * speed;
         }
 
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+        if(Input.GetKeyDown("d"))
         {
             rb.velocity = goRight * speed;
         }
