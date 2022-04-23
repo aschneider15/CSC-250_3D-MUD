@@ -12,7 +12,7 @@ public class playerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        thePlayer = new Player("Mike");
+        thePlayer = new Player("Aidan");
         rb = this.gameObject.GetComponent<Rigidbody>();
     }
 
@@ -42,19 +42,19 @@ public class playerScript : MonoBehaviour
     void Update()
     {
         //print(thePlayer.getName());
-        if (Input.GetKeyDown("up"))
+        if (Input.GetKeyDown("w"))
         {
             rb.velocity = Vector3.forward * speed;
         }
-        else if (Input.GetKeyDown("down"))
+        else if (Input.GetKeyDown("s"))
         {
             rb.velocity = Vector3.back * speed;
         }
-        else if (Input.GetKeyDown("left"))
+        else if (Input.GetKeyDown("a"))
         {
             rb.velocity = Vector3.left * speed;
         }
-        else if (Input.GetKeyDown("right"))
+        else if (Input.GetKeyDown("d"))
         {
             rb.velocity = Vector3.right * speed;
         }
